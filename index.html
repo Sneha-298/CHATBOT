@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Chatbot</title>
+    <script src="chatbot.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        .chat-container {
+            border: 1px solid black;
+            height: 500px;
+            margin-bottom: 20px;
+            overflow-y: scroll;
+            padding: 10px;
+        }
+        .chat-message {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chatbot</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="chat-container" id="chat-container">
+                </div>
+                <form id="chat-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="chat-message" placeholder="Type your message...">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
